@@ -1,0 +1,8 @@
+[functions.generate-training-plan]
+verify_jwt = false
+
+[functions.chat-training-plan]
+verify_jwt = false
+
+[functions.send-workout-reminders]
+verify_jwt = true
