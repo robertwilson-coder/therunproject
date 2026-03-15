@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/TheRunProjectdblue.svg" />
+    <link rel="apple-touch-icon" href="/icon-home-screen.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="description" content="Custom running training plans that adapt to your life" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>The Run Project</title>
+    <style>
+      .iubenda-cs-preferences-link,
+      .iubenda-cs-widget,
+      .iubenda-cs-container,
+      .iubenda-cs-visible,
+      #iubenda-cs-banner,
+      .iubenda-cs-opt-in,
+      .iubenda-cs-opt-out,
+      div[class*="iubenda-cs"],
+      a[class*="iubenda-cs"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript" src="https://embeds.iubenda.com/widgets/213359dc-3e27-4eac-9f4c-7554f2f0c173.js"></script>
+    <script type="text/javascript">
+      (function (w,d) {
+        var loader = function () {
+          var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0];
+          s.src="https://cdn.iubenda.com/iubenda.js";
+          tag.parentNode.insertBefore(s,tag);
+        };
+        if(w.addEventListener){
+          w.addEventListener("load", loader, false);
+        }else if(w.attachEvent){
+          w.attachEvent("onload", loader);
+        }else{
+          w.onload = loader;
+        }
+      })(window, document);
+    </script>
+  </body>
+</html>
